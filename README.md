@@ -4,9 +4,6 @@
 <p><b>Developed with ❤️ by Sadesha Hansana</b></p>
 </div>
 
-  <p><b>GitHub Actions හරහා 24/7 ක්‍රියාත්මක වන ප්‍රබල Telegram File Search Bot පද්ධතිය.</b></p>
-</div>
-
 <div align="center">
   <img src="https://capsule-render.vercel.app/render?type=distort&color=gradient&height=200&section=header&text=Telegram%20File%20Bot&fontSize=60&animation=twinkling" width="100%">
   <p><b>GitHub Actions හරහා 24/7 ක්‍රියාත්මක වන ප්‍රබල Telegram File Search Bot පද්ධතිය.</b></p>
