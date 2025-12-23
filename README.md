@@ -33,53 +33,7 @@ Repo එක Public නොදමන්න
 
 ---
 
-## 🛠️ GitHub Workflow සැකසුම
 
-ඔබේ බොට් 24/7 පවත්වා ගැනීමට අවශ්‍ය Workflow කේතය පහත දැක්වේ:
-
-```yaml
-name: Telegram Bot 24/7 Deployment
-
-on:
-  push:
-    branches: [ main ]
-  schedule:
-    - cron: '0 */6 * * *' 
-  workflow_dispatch:
-
-jobs:
-  run-bot:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write 
-
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v3
-
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
-
-      - name: Install Dependencies
-        run: pip install python-telegram-bot
-
-      - name: Run Bot with Timeout
-        run: |
-          timeout 21000s python bot.py || echo "Saving data..."
-
-      - name: Auto-Save Database
-        if: always()
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action Bot"
-          git add bot_database.db
-          git commit -m "Update DB: $(date)" || echo "No changes to commit"
-          git push
-
-
----
 
 ## 🚀 විශේෂාංග (Features)
 
