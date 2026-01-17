@@ -9,8 +9,8 @@ from telegram.ext import (
 )
 
 # --- සැකසුම් (Configuration) ---
-BOT_TOKEN = "8130371628:AAEqdTR-9I5piNGiW5__LNNmzdCxGyitfPI" 
-ADMIN_ID = 8107411538 # ඔබේ Telegram ID එක
+BOT_TOKEN = "ඔබගෙ බොට් ටොකන් එක" 
+ADMIN_ID = 8107411511 # ඔබේ Telegram ID එක
 DB_NAME = "bot_database.db"
 RESULTS_PER_PAGE = 5
 MAINTENANCE_MODE = False
